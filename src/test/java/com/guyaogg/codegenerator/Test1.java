@@ -2,7 +2,8 @@ package com.guyaogg.codegenerator;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * @author guyao
@@ -14,6 +15,6 @@ public class Test1 {
 
     @Test
     public void t1(){
-        System.out.println(Arrays.toString("5\\6\\7".split("\\\\")));
+        System.out.println(LocalDateTime.now().plusHours(2).format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")));
     }
 }

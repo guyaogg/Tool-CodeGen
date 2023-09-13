@@ -54,7 +54,7 @@ public class MainController {
         String daoClassName = doName + "DAO";
         String serviceClassName = doName + "Service";
         String serviceImplClassName = doName + "ServiceIml";
-        String time = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss"));
+        String time = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         // 4. 分类型分类讨论
         String doJavaPath = getJavaPathAndInList(processType, list, author, doPath, doClassName, time, "do", null);
         String queryJavaPath = getJavaPathAndInList(processType, list, author, queryPath, queryClassName, time, "query", null);
